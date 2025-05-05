@@ -1,0 +1,50 @@
+body {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  /* Reverse padding/margin helpers if old Bootstrap classes are used */
+  .pl--100 { padding-left: 0 !important; padding-right: 100px !important; /* Adjust value */ }
+  .pr--100 { padding-right: 0 !important; padding-left: 100px !important; /* Adjust value */ }
+  .ml--auto { margin-left: unset !important; margin-right: auto !important; }
+  /* etc. for other spacing helpers used */
+  
+  .header-three-area .logo-area { float: right; }
+  .header-three-area .nav-area-main { float: right; margin-right: 20px; margin-left: 0; } /* Example adjustment */
+  .header-three-area .button-area { float: left; }
+  .menu-btn { float: left; }
+  
+  .text-lg-start { text-align: right !important; }
+  .text-lg-end { text-align: left !important; }
+  .text-md-start { text-align: right !important; }
+  .text-md-end { text-align: left !important; }
+  .text-sm-start { text-align: right !important; }
+  .text-sm-end { text-align: left !important; }
+  
+  
+  .single-feature-area-three .icon { /* Example: Keep icon on the right */
+      margin-right: 0;
+      margin-left: 20px;
+  }
+  
+  /* Swiper adjustments might be needed */
+  .swiper-container { direction: ltr; /* Swiper often controls its own direction */ }
+  /* Or initialize Swiper with rtl: true if the library supports it */
+  
+  
+  .footer-singl-wized.left-logo { float: right; }
+  .social-style-two ul li { margin-right: 0; margin-left: 15px; }
+  
+  .copy-right-start-two p { float: right; }
+  .copy-right-start-two ul { float: left; }
+  .copy-right-start-two ul li { margin-left: 0; margin-right: 20px; }
+  
+  /* Adjust accordion icons if needed */
+  .accordion-button::after {
+      margin-left: 0;
+      margin-right: auto;
+  }
+  
+  /* Adjust form input alignment/labels if needed */
+  
+  /* ... other RTL adjustments ... */
