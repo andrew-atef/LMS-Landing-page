@@ -1,79 +1,106 @@
 <!DOCTYPE html>
-<!-- *** ADD lang="ar" and dir="rtl" *** -->
 <html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- *** UPDATE FAVICON (Keep path) *** -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/teacher_fav.png">
-    <!-- *** UPDATE TITLE *** -->
-    <title>[اسم المعلم/ة] - مدرس/ة لغة إنجليزية محترف/ة في مصر</title>
-    <!-- bootstrap min css -->
+    <title>أحمد علي - مدرس لغة إنجليزية محترف في مصر</title>
+
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet preload" href="assets/css/plugins/fontawesome-6.css" as="style">
     <link rel="stylesheet preload" href="assets/css/plugins/unicons.css" as="style">
-    <!-- <link rel="stylesheet preload" href="assets/css/plugins/swiper.min.css" as="style"> REMOVED Swiper CSS as it's no longer needed for this section -->
     <link rel="stylesheet preload" href="assets/css/vendor/magnific-popup.css" as="style">
     <link rel="stylesheet preload" href="assets/css/vendor/metismenu.css" as="style">
-    <link rel="stylesheet preload" href="assets/css/vendor/bootstrap.min.css" as="style"> <!-- Bootstrap might need its RTL version -->
-    <!-- custom css style -->
+    <link rel="stylesheet preload" href="assets/css/vendor/bootstrap.min.css" as="style">
     <link rel="stylesheet preload" href="assets/css/style.css" as="style">
-    <!-- *** ADD Custom CSS for Teacher Portfolio if needed *** -->
     <link rel="stylesheet preload" href="assets/css/teacher-style.css" as="style">
-    <!-- *** IMPORTANT: ADD RTL CSS LINK *** -->
     <link rel="stylesheet" href="assets/css/rtl-style.css">
 
     <style>
-        /* Optional: Add some basic styling for the new step boxes */
+        body {
+            font-family: "Cairo", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400; 
+            font-style: normal;
+            font-variation-settings: "slnt" 0;
+        }
+
+        .cairo-bold {
+            font-weight: 700;
+        }
+        .cairo-light {
+            font-weight: 300;
+        }
+
+        /* Existing Styles */
         .how-it-works-step {
             padding: 25px;
             border: 1px solid #eee;
             border-radius: 8px;
             background-color: #fff;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            height: 100%; /* Make boxes equal height in a row */
+            height: 100%;
             display: flex;
             flex-direction: column;
         }
         .how-it-works-step .trans {
             font-size: 3rem;
             font-weight: bold;
-            color: var(--color-primary-light); /* Or your theme's accent color */
+            color: var(--color-primary-light);
             margin-bottom: 10px;
             line-height: 1;
         }
          .how-it-works-step .title {
-            font-size: 1.5rem; /* Adjust as needed */
+            font-size: 1.5rem;
             margin-bottom: 15px;
+            font-weight: 600; /* Slightly bolder title */
          }
          .how-it-works-step .disc {
-             flex-grow: 1; /* Pushes button to bottom if present */
+             flex-grow: 1;
              margin-bottom: 20px;
          }
          .how-it-works-step .rts-btn {
-             margin-top: auto; /* Aligns button to bottom */
+             margin-top: auto;
+         }
+         .teacher-logo-text {
+            font-size: 1.8rem;
+            font-weight: 700; /* Make logo text bold */
+            color: var(--color-primary);
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 0;
+            font-family: "Cairo", sans-serif; /* Explicitly set font for logo */
+         }
+         /* Ensure buttons and specific elements use Cairo */
+         .rts-btn, h1, h2, h3, h4, h5, h6, .title, .pre, .links-main, .accordion-button {
+            font-family: "Cairo", sans-serif;
+         }
+         h1.title span, h2.title span {
+             font-weight: 700; /* Ensure span inside titles are bold */
          }
     </style>
 
 </head>
 
-<body class="index-three"> <!-- Consider removing index-three if it causes RTL conflicts -->
+<body class="index-three">
 
-    <!-- header three area start -->
     <header class="header-style-three header--sticky">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="header-three-area">
-                        <!-- *** UPDATE LOGO (Keep path) *** -->
                         <a href="index.html" class="logo-area">
-                             <img src="assets/images/logo/teacher_logo.svg" alt="شعار [اسم المعلم/ة]" loading="lazy">
-                            <!-- Or Text: <span class="teacher-logo-text">[اسم المعلم/ة]</span> -->
+                             <span class="teacher-logo-text">أحمد علي</span>
                         </a>
                         <div class="nav-area-main d-xl-block d-lg-block d-md-none d-sm-none d-none">
                             <nav>
-                                <!-- *** UPDATE NAVIGATION *** -->
                                 <ul>
                                     <li><a class="links-main" href="#home">الرئيسية</a></li>
                                     <li><a class="links-main" href="#about">عني</a></li>
@@ -84,7 +111,6 @@
                             </nav>
                         </div>
                         <div class="button-area">
-                             <!-- *** UPDATE BUTTONS *** -->
                             <a href="#contact" class="rts-btn btn-primary">احجز استشارة</a>
                         </div>
                         <div class="menu-btn d-xl-none d-lg-none d-md-block d-sm-block" id="menu-btn">
@@ -99,24 +125,21 @@
             </div>
         </div>
     </header>
-    <!-- header three area end -->
 
-    <div class="gradient-sec-three"> <!-- Consider renaming/restyling this class -->
+    <div class="gradient-sec-three">
 
-        <!-- rts banner area start -->
         <div class="rts-banner-area-three" id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="banner-three-inner">
                             <div class="inner">
-                                <!-- *** UPDATE HERO CONTENT *** -->
                                 <h1 class="title">
                                     أطلق العنان لإمكانياتك في اللغة الإنجليزية <br>
-                                    مع <span>[اسم المعلم/ة]</span>
+                                    مع <span>أحمد علي</span>
                                 </h1>
                                 <p class="disc">
-                                    مدرس/ة لغة إنجليزية خبير/ة بمصر، أقدم دروسًا شخصية عبر الإنترنت لمساعدتك على تحقيق الطلاقة، اجتياز الامتحانات، والتواصل بثقة. أتحدث العربية بطلاقة لشرح أوضح.
+                                    مدرس لغة إنجليزية خبير بمصر، أقدم دروسًا شخصية عبر الإنترنت لمساعدتك على تحقيق الطلاقة، اجتياز الامتحانات، والتواصل بثقة. أتحدث العربية بطلاقة لشرح أوضح.
                                 </p>
                                 <div class="button-area-main">
                                     <a href="#courses" class="rts-btn btn-primary">استكشف الدورات</a>
@@ -128,50 +151,42 @@
                     </div>
                 </div>
             </div>
-             <!-- *** UPDATE SHAPE/ICON AREA *** -->
             <div class="shape-image">
                 <div class="icon-wrapper">
                     <div class="single one">
-                        <img src="assets/images/banner/icon/01.png" alt="ممارسة المحادثة" class="one" loading="lazy">
+                        <i class="fa-solid fa-comments fa-2x" style="color: #0C844C;"></i>
                         <span>ممارسة المحادثة</span>
                     </div>
                     <div class="single two">
-                         <img src="assets/images/banner/icon/01.png" alt="التحضير للامتحانات" class="one" loading="lazy">
+                         <i class="fa-solid fa-file-signature fa-2x" style="color: #0C844C;"></i>
                         <span>التحضير للامتحانات</span>
                     </div>
                     <div class="single three">
-                        <img src="assets/images/banner/icon/01.png" alt="تعلم شخصي" class="one" loading="lazy">
+                        <i class="fa-solid fa-user-graduate fa-2x" style="color: #0C844C;"></i>
                         <span>تعلم شخصي</span>
                     </div>
                     <div class="single four">
-                         <img src="assets/images/banner/icon/01.png" alt="إنجليزية الأعمال" class="one" loading="lazy">
+                         <i class="fa-solid fa-briefcase fa-2x" style="color: #0C844C;"></i>
                         <span>إنجليزية الأعمال</span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- rts banner area end -->
 
-        <!-- image feature-area start -->
         <div class="image-feature-area-three rts-section-gapBottom" id="about">
             <div class="shape-bg">
-                <!-- Optional: Replace or remove -->
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="large-imaeg-bottom-banner text-center">
-                             <!-- Use a professional photo of the teacher -->
-                        </div>
+                        <!-- <div class="large-imaeg-bottom-banner text-center">
+                             <img src="assets/images/banner/teacher_photo_placeholder.jpg" alt="صورة المعلم أحمد علي" loading="lazy" style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        </div> -->
                     </div>
                 </div>
-                 <!-- *** UPDATE FEATURE BOXES *** -->
                 <div class="row g-5 mt--80">
                     <div class="col-lg-4">
                         <div class="single-feature-area-three">
-                            <!-- <div class="icon">
-                                <img src="assets/images/icons/target_student.svg" alt="أيقونة تعلم شخصي" loading="lazy">
-                            </div> -->
                             <div class="info-wrapper">
                                 <span>مصمم خصيصًا لك</span>
                                 <h5 class="title">مسارات تعلم شخصية</h5>
@@ -180,9 +195,6 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="single-feature-area-three">
-                            <!-- <div class="icon">
-                                <img src="assets/images/icons/fluency.svg" alt="أيقونة الطلاقة" loading="lazy">
-                            </div> -->
                             <div class="info-wrapper">
                                 <span>تحدث بطبيعية</span>
                                 <h5 class="title">التركيز على الطلاقة والثقة</h5>
@@ -191,9 +203,6 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="single-feature-area-three">
-                            <!-- <div class="icon">
-                                 <img src="assets/images/icons/certificate.svg" alt="أيقونة التحضير للامتحانات" loading="lazy">
-                            </div> -->
                             <div class="info-wrapper">
                                 <span>حقق أهدافك</span>
                                 <h5 class="title">تحضير خبير للامتحانات (IELTS, TOEFL)</h5>
@@ -203,14 +212,11 @@
                 </div>
             </div>
         </div>
-        <!-- image feature-area end -->
 
-        <!-- our trusted clients area start -->
         <div class="our-trusted-clients rts-section-gapBottom" id="testimonials">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                         <!-- *** UPDATE SECTION TITLE *** -->
                         <div class="title-center-three">
                             <span class="pre">نجاح الطلاب</span>
                             <h2 class="title"> استمع لآراء <span>طلابي السعداء</span> <br> في جميع أنحاء مصر</h2>
@@ -223,15 +229,14 @@
                          <p style="font-style: italic; color: #555;">بناء الثقة والمهارات، درسًا تلو الآخر.</p>
                     </div>
                 </div>
-                 <!-- *** UPDATE TESTIMONIALS *** -->
                 <div class="row mt--60 g-5">
                     <div class="col-lg-4">
                         <div class="single-testimonial-three">
                             <div class="top-area">
                                 <div class="author">
                                     <div class="info-wrapper-area">
-                                        <p>أحمد ك.</p> <!-- Student Name/Initial -->
-                                        <span>طالب آيلتس، القاهرة</span> <!-- Student Description -->
+                                        <p>أحمد ك.</p>
+                                        <span>طالب آيلتس، القاهرة</span>
                                     </div>
                                 </div>
                                 <div class="start-area">
@@ -243,8 +248,7 @@
                                 </div>
                             </div>
                             <div class="body">
-                                <!-- *** REAL TESTIMONIAL TEXT *** -->
-                                <p>"بفضل [اسم المعلم/ة]، حصلت أخيرًا على درجة الآيلتس التي أحتاجها! كانت الدروس مركزة والملاحظات مفيدة للغاية. أوصي به/بها بشدة!"</p>
+                                <p>"بفضل الأستاذ أحمد، حصلت أخيرًا على درجة الآيلتس التي أحتاجها! كانت الدروس مركزة والملاحظات مفيدة للغاية. أوصي به بشدة!"</p>
                             </div>
                         </div>
                     </div>
@@ -266,7 +270,7 @@
                                 </div>
                             </div>
                             <div class="body">
-                                <p>"تحسنت مهاراتي في المحادثة كثيرًا! [اسم المعلم/ة] صبور/ة ويخلق/تخلق بيئة تعليمية مريحة جدًا. أشعر بثقة أكبر في التحدث باللغة الإنجليزية الآن."</p>
+                                <p>"تحسنت مهاراتي في المحادثة كثيرًا! الأستاذ أحمد صبور ويخلق بيئة تعليمية مريحة جدًا. أشعر بثقة أكبر في التحدث باللغة الإنجليزية الآن."</p>
                             </div>
                         </div>
                     </div>
@@ -288,40 +292,32 @@
                                 </div>
                             </div>
                             <div class="body">
-                                <p>"مدرس/ة ممتاز/ة للغة الإنجليزية للأعمال. كانت الدروس عملية وساعدتني بشكل مباشر في التواصل في عملي. يتفهم/تتفهم [اسم المعلم/ة] السياق المصري جيدًا."</p>
+                                <p>"مدرس ممتاز للغة الإنجليزية للأعمال. كانت الدروس عملية وساعدتني بشكل مباشر في التواصل في عملي. يتفهم الأستاذ أحمد السياق المصري جيدًا."</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- our trasted clients area end -->
 
-    </div> <!-- End of first gradient section -->
+    </div>
 
-    <div class="gradient-sec-three-two"> <!-- Consider renaming/restyling -->
-        <!-- rts-case area start -->
+    <div class="gradient-sec-three-two">
         <div class="case-area-three rts-section-gapBottom" id="courses">
             <div class="shape-img">
-                <!-- Optional: Replace or remove -->
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <!-- *** UPDATE SECTION TITLE *** -->
                         <div class="title-center-three">
                             <span class="pre">خدماتي</span>
                             <h2 class="title">دورات مقدمة لتناسب <br> احتياجاتك التعليمية</h2>
                         </div>
                     </div>
                 </div>
-                 <!-- *** UPDATE COURSE/SERVICE BOXES *** -->
                 <div class="row g-5 mt--5">
                     <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="rts-single-case-three">
-                            <!-- <div class="icon">
-                                <img src="assets/images/icons/general_english.svg" alt="الإنجليزية العامة" style="width: 30px; height: auto;">
-                            </div> -->
                             <div class="inner-content">
                                 <h5 class="title">الإنجليزية العامة</h5>
                                 <p class="disc">
@@ -332,9 +328,6 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                          <div class="rts-single-case-three">
-                            <!-- <div class="icon">
-                                <img src="assets/images/icons/ielts_toefl.svg" alt="IELTS/TOEFL" style="width: 35px; height: auto;">
-                            </div> -->
                             <div class="inner-content">
                                 <h5 class="title">التحضير لـ IELTS و TOEFL</h5>
                                 <p class="disc">
@@ -345,9 +338,6 @@
                     </div>
                      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                          <div class="rts-single-case-three">
-                            <!-- <div class="icon">
-                                <img src="assets/images/icons/conversation_practice.svg" alt="ممارسة المحادثة" style="width: 32px; height: auto;">
-                            </div> -->
                             <div class="inner-content">
                                 <h5 class="title">ممارسة المحادثة</h5>
                                 <p class="disc">
@@ -358,9 +348,6 @@
                     </div>
                      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                          <div class="rts-single-case-three">
-                            <!-- <div class="icon">
-                                 <img src="assets/images/icons/business_briefcase.svg" alt="إنجليزية الأعمال" style="width: 30px; height: auto;">
-                            </div> -->
                             <div class="inner-content">
                                 <h5 class="title">إنجليزية الأعمال</h5>
                                 <p class="disc">
@@ -371,9 +358,6 @@
                     </div>
                      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                          <div class="rts-single-case-three">
-                            <!-- <div class="icon">
-                                 <img src="assets/images/icons/kids_english.svg" alt="الإنجليزية للأطفال" style="width: 35px; height: auto;">
-                            </div> -->
                             <div class="inner-content">
                                 <h5 class="title">الإنجليزية للأطفال</h5>
                                 <p class="disc">
@@ -384,9 +368,6 @@
                     </div>
                      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                          <div class="rts-single-case-three">
-                            <!-- <div class="icon">
-                                 <img src="assets/images/icons/academic_writing.svg" alt="الكتابة الأكاديمية" style="width: 30px; height: auto;">
-                            </div> -->
                             <div class="inner-content">
                                 <h5 class="title">الكتابة الأكاديمية</h5>
                                 <p class="disc">
@@ -398,25 +379,20 @@
                 </div>
             </div>
         </div>
-        <!-- rts-case area end -->
-    </div> <!-- End of second gradient section -->
+    </div>
 
-    <!-- how it works area start -->
     <div class="how-it-work-area rts-section-gapBottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                     <!-- *** UPDATE SECTION TITLE *** -->
                     <div class="title-center-three">
                         <span class="pre">رحلة التعلم</span>
                         <h2 class="title">كيف سنعمل معًا <br> لتحقيق أهدافك</h2>
                     </div>
                 </div>
             </div>
-            <!-- Rebuilt Section: Removed Swiper, using Bootstrap Grid -->
             <div class="row g-4 mt--40 justify-content-center">
 
-                <!-- Step 1: Assessment -->
                 <div class="col-lg-6 col-md-6 mb-4 d-flex">
                     <div class="how-it-works-step text-center">
                         <span class="trans d-block">01</span>
@@ -428,7 +404,6 @@
                     </div>
                 </div>
 
-                <!-- Step 2: Personalized Plan -->
                  <div class="col-lg-6 col-md-6 mb-4 d-flex">
                     <div class="how-it-works-step text-center">
                         <span class="trans d-block">02</span>
@@ -436,11 +411,9 @@
                         <p class="disc">
                             بناءً على التقييم، أصمم خطة تعليمية مخصصة بمواد وأنشطة مناسبة لك فقط.
                         </p>
-                        <!-- No button needed here based on original -->
                     </div>
                 </div>
 
-                <!-- Step 3: Interactive Lessons -->
                 <div class="col-lg-6 col-md-6 mb-4 d-flex">
                      <div class="how-it-works-step text-center">
                         <span class="trans d-block">03</span>
@@ -448,11 +421,9 @@
                         <p class="disc">
                             انضم إلى جلسات مباشرة وفردية عبر الإنترنت تركز على المشاركة النشطة والشروحات الواضحة والتطبيق العملي.
                         </p>
-                         <!-- No button needed here based on original -->
                     </div>
                 </div>
 
-                 <!-- Step 4: Progress Tracking -->
                 <div class="col-lg-6 col-md-6 mb-4 d-flex">
                      <div class="how-it-works-step text-center">
                         <span class="trans d-block">04</span>
@@ -465,29 +436,23 @@
                 </div>
 
             </div>
-            <!-- End of Rebuilt Section -->
         </div>
     </div>
-    <!-- how it works area end -->
 
 
-    <div class="bottom-gradient"> <!-- Consider renaming/restyling -->
+    <div class="bottom-gradient">
 
-        <!-- pricing table three area start -->
         <div class="pricing-table-three-area rts-section-gapBottom">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                         <!-- *** UPDATE SECTION TITLE *** -->
                         <div class="title-center-three">
                             <span class="pre">الاستثمار</span>
                             <h2 class="title">خيارات مرنة لبدء <br> تعلم اللغة الإنجليزية</h2>
                         </div>
                     </div>
                 </div>
-                 <!-- Simple Package Display -->
                  <div class="row mt--50 g-5 justify-content-center">
-                    <!-- Package 1: Consultation -->
                     <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="single-prcing-three-main-wrapper">
                             <div class="head-area">
@@ -505,12 +470,11 @@
                             </div>
                         </div>
                     </div>
-                     <!-- Package 2: Hourly/Lesson Pack -->
                     <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="single-prcing-three-main-wrapper active">
                              <div class="head-area">
                                 <span class="pre">تعلم مرن</span>
-                                <h2 class="title">دروس خصوصية</h2> <!-- Maybe add "تبدأ من X جنيه/ساعة" -->
+                                <h2 class="title">دروس خصوصية</h2>
                             </div>
                             <div class="body">
                                 <p class="disc">دروس فردية مصممة خصيصًا لاحتياجاتك المحددة.</p>
@@ -524,17 +488,16 @@
                             </div>
                         </div>
                     </div>
-                     <!-- Package 3: Specific Course (e.g., IELTS) -->
                     <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="single-prcing-three-main-wrapper">
                              <div class="head-area">
                                 <span class="pre">نجاح الامتحانات</span>
-                                <h2 class="title">دورة التحضير للآيلتس</h2> <!-- Add e.g. "(12 أسبوع)" -->
+                                <h2 class="title">دورة التحضير للآيلتس</h2>
                             </div>
                             <div class="body">
-                                <p class="disc">تحضير شامل لامتحان الآيلتس.</p>
+                                <p class="disc">تحضير شامل لامتحان الآيلتس (برنامج مكثف).</p>
                                  <ul class="pricing-features">
-                                    <li><i class="fa-solid fa-check"></i> منهج منظم</li>
+                                    <li><i class="fa-solid fa-check"></i> منهج منظم ومكثف</li>
                                     <li><i class="fa-solid fa-check"></i> اختبارات تجريبية وملاحظات</li>
                                     <li><i class="fa-solid fa-check"></i> تدريب على الاستراتيجيات</li>
                                     <li><i class="fa-solid fa-check"></i> نتائج مثبتة</li>
@@ -546,25 +509,20 @@
                  </div>
             </div>
         </div>
-        <!-- pricing table three area end -->
 
 
-        <!-- rts faq area start -->
         <div class="rts-faq-area rts-section-gapBottom bg_faq" id="faq">
             <div class="container">
                 <div class="row">
-                     <!-- *** UPDATE SECTION TITLE *** -->
                     <div class="title-center-three">
                         <span class="pre">الأسئلة الشائعة</span>
                         <h2 class="title">أسئلة شائعة حول <br> تعلم الإنجليزية معي</h2>
                     </div>
                 </div>
-                 <!-- *** UPDATE FAQ QUESTIONS & ANSWERS *** -->
                 <div class="row mt--35">
                     <div class="col-lg-12">
                         <div class="accordion-area-one">
                             <div class="accordion" id="accordionExample">
-                                <!-- Question 1 -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -573,12 +531,10 @@
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <!-- Add Teacher's Actual Qualifications -->
-                                            أحمل شهادة [شهادتك/درجتك العلمية، مثل: بكالوريوس آداب إنجليزي، شهادة CELTA] ولدي أكثر من [X] سنوات من الخبرة في تدريس اللغة الإنجليزية لطلاب من مختلف الأعمار والمستويات، بشكل أساسي عبر الإنترنت وداخل مصر. أنا متخصص/ة في [مثل: التحضير للامتحانات، الإنجليزية للمحادثة].
+                                            أحمل شهادة بكالوريوس آداب إنجليزي وشهادة CELTA المعتمدة دوليًا، ولدي أكثر من 8 سنوات من الخبرة في تدريس اللغة الإنجليزية لطلاب من مختلف الأعمار والمستويات، بشكل أساسي عبر الإنترنت وداخل مصر. أنا متخصص في التحضير لامتحان IELTS والإنجليزية للمحادثة والأعمال.
                                         </div>
                                     </div>
                                 </div>
-                                 <!-- Question 2 -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -587,11 +543,10 @@
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            أستخدم بشكل أساسي [مثل: Zoom، Google Meet، Skype] لدروسنا المباشرة. تتيح هذه المنصات مكالمات الفيديو ومشاركة الشاشة والسبورات التفاعلية والتواصل السهل. يمكننا مناقشة تفضيلاتك أثناء الاستشارة.
+                                            أستخدم بشكل أساسي Zoom و Google Meet لدروسنا المباشرة. تتيح هذه المنصات مكالمات الفيديو ومشاركة الشاشة والسبورات التفاعلية والتواصل السهل. يمكننا مناقشة تفضيلاتك أثناء الاستشارة.
                                         </div>
                                     </div>
                                 </div>
-                                 <!-- Question 3 -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -600,11 +555,10 @@
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            جدولة المواعيد مرنة! يمكننا تنسيق الأوقات المناسبة لكلينا عبر [مثل: واتساب، البريد الإلكتروني، رابط Calendly]. يمكن سداد المدفوعات عن طريق [مثل: التحويل البنكي داخل مصر، فودافون كاش، رابط دفع إلكتروني - حدد الخيارات]. سيتم تقديم التفاصيل بعد الاستشارة.
+                                            جدولة المواعيد مرنة! يمكننا تنسيق الأوقات المناسبة لكلينا عبر واتساب أو البريد الإلكتروني. يمكن سداد المدفوعات عن طريق التحويل البنكي داخل مصر أو فودافون كاش. سيتم تقديم التفاصيل بعد الاستشارة وحجز الدرس الأول.
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Question 4 -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingFour">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -613,11 +567,10 @@
                                     </h2>
                                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            نعم، بالتأكيد! أستمتع بالعمل مع المتعلمين من جميع المستويات، بما في ذلك المبتدئين تمامًا. سنبدأ بالأساسيات ونبني ثقتك خطوة بخطوة في بيئة داعمة. كمتحدث/ة أصلي/ة للغة العربية، يمكنني توضيح المفاهيم بسهولة.
+                                            نعم، بالتأكيد! أستمتع بالعمل مع المتعلمين من جميع المستويات، بما في ذلك المبتدئين تمامًا. سنبدأ بالأساسيات ونبني ثقتك خطوة بخطوة في بيئة داعمة. كمتحدث للغة العربية، يمكنني توضيح المفاهيم بسهولة.
                                         </div>
                                     </div>
                                 </div>
-                                 <!-- Question 5 -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingFive">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -636,9 +589,7 @@
                 </div>
             </div>
         </div>
-        <!-- rts faq area end -->
 
-        <!-- cta area start -->
         <div class="cta-main-wrapper-three rts-section-gapBottom" id="contact">
             <div class="container">
                 <div class="row">
@@ -646,7 +597,6 @@
                         <div class="main-wrapper-cta-three">
                             <div class="row align-items-center">
                                 <div class="col-lg-7 col-md-12 col-sm-12">
-                                    <!-- *** UPDATE CTA CONTENT *** -->
                                     <div class="content-main-wrapper-three">
                                         <h3 class="title">
                                             هل أنت مستعد لبدء رحلتك في اللغة الإنجليزية؟
@@ -655,13 +605,12 @@
                                             اتخذ الخطوة الأولى نحو الطلاقة والثقة. احجز استشارتك المجانية اليوم لمناقشة أهدافك!
                                         </p>
                                         <a href="#contact-form" class="rts-btn btn-primary">احجز استشارة مجانية</a>
-                                         <p class="contact-info-cta mt-3">أو تواصل عبر واتساب: [رقم الواتساب الخاص بك]</p>
+                                         <p class="contact-info-cta mt-3">أو تواصل عبر واتساب: <a href="https://wa.me/+201001234567" target="_blank" style="color: inherit; text-decoration: underline;">+20 100 123 4567</a></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-md-12 col-sm-12 mt_sm--30">
-                                     <!-- *** UPDATE CTA IMAGE *** -->
                                     <div class="thumbnail-three text-center">
-                                        <img src="assets/images/cta/teacher_cta_image.jpg" alt="اتصل بمعلم/ة الإنجليزية" loading="lazy" style="max-width: 80%; height: auto;">
+                                        <img src="assets/images/cta/teacher_cta_image.jpg" alt="اتصل بمعلم الإنجليزية أحمد علي" loading="lazy" style="max-width: 80%; height: auto; border-radius: 10px;">
                                     </div>
                                 </div>
                             </div>
@@ -669,12 +618,10 @@
                     </div>
                 </div>
             </div>
-             <!-- Simple Contact Form Section -->
             <div class="container mt-5" id="contact-form">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h4 class="text-center mb-4">أرسل لي رسالة</h4>
-                        <!-- Make sure form action points to correct handler -->
                         <form action="your_form_handler.php" method="POST" class="contact-form-style">
                              <div class="row mb-3">
                                 <div class="col-md-6">
@@ -685,10 +632,10 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <input type="text" name="subject" class="form-control" placeholder="الموضوع" required>
+                                <input type="text" name="subject" class="form-control" placeholder="الموضوع (مثل: استفسار عن دورة IELTS)" required>
                             </div>
                              <div class="mb-3">
-                                <textarea name="message" class="form-control" rows="5" placeholder="رسالتك" required></textarea>
+                                <textarea name="message" class="form-control" rows="5" placeholder="رسالتك (يرجى ذكر مستواك الحالي وأهدافك)" required></textarea>
                             </div>
                              <div class="text-center">
                                 <button type="submit" class="rts-btn btn-primary">إرسال الرسالة</button>
@@ -698,39 +645,32 @@
                 </div>
             </div>
         </div>
-        <!-- cta area end -->
-    </div> <!-- End of bottom gradient -->
+    </div>
 
-    <!-- rts footer area start -->
     <div class="rts-footer-area bg-footer footer-two">
         <div class="container rts-section-gapTop pb--100">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- footer main wrapper -->
                     <div class="footer-one-main-wrapper">
-                        <!-- Footer Widget 1: Logo & About -->
                         <div class="footer-singl-wized left-logo">
                             <div class="head">
                                 <a href="#">
-                                    <!-- *** UPDATE FOOTER LOGO *** -->
-                                    <img src="assets/images/logo/teacher_logo_footer.svg" alt="شعار [اسم المعلم/ة]" loading="lazy">
+                                    <span class="teacher-logo-text" style="color: #fff;">أحمد علي</span>
                                 </a>
                             </div>
                             <div class="body">
                                 <p class="dsic">
                                     مساعدة الطلاب في مصر على تحقيق أهدافهم في اللغة الإنجليزية من خلال تدريس شخصي وفعال عبر الإنترنت.
                                 </p>
-                                 <!-- *** UPDATE SOCIAL LINKS *** -->
                                 <div class="social-style-two">
                                     <ul>
-                                        <li><a href="[رابط لينكد إن الخاص بك]" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="[رابط صفحة فيسبوك الخاصة بك]" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <!-- Add other relevant links -->
+                                        <li><a href="https://linkedin.com/in/example" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://facebook.com/example" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://wa.me/+201001234567" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- Footer Widget 2: Quick Links -->
                         <div class="footer-singl-wized">
                             <div class="head">
                                 <h6 class="title">روابط سريعة</h6>
@@ -745,55 +685,44 @@
                                 </ul>
                             </div>
                         </div>
-                         <!-- Footer Widget 3: Contact Info -->
                         <div class="footer-singl-wized">
                             <div class="head">
                                 <h6 class="title">معلومات الاتصال</h6>
                             </div>
                             <div class="body">
                                 <ul class="menu contact-info-footer">
-                                    <li><i class="fa-regular fa-envelope"></i> <a href="mailto:[بريدك الإلكتروني]">[بريدك الإلكتروني]</a></li>
-                                    <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/[رقم الواتساب الخاص بك]" target="_blank">[رقم الواتساب الخاص بك]</a></li>
-                                    <li><i class="fa-solid fa-location-dot"></i> مقيم/ة في [مدينتك]، مصر (دروس عبر الإنترنت)</li>
+                                    <li><i class="fa-regular fa-envelope"></i> <a href="mailto:ahmed.ali.teacher@email.com">ahmed.ali.teacher@email.com</a></li>
+                                    <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/+201001234567" target="_blank">+20 100 123 4567</a></li>
+                                    <li><i class="fa-solid fa-location-dot"></i> مقيم في القاهرة، مصر (دروس عبر الإنترنت)</li>
                                 </ul>
                             </div>
                         </div>
-                        <!-- Removed newsletter widget -->
                     </div>
-                    <!-- footer main wrapper end -->
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- footer-copyright-area start -->
                     <div class="copy-right-start-two">
-                        <!-- *** UPDATE COPYRIGHT *** -->
-                        <p>© [السنة الحالية] [اسم المعلم/ة]. جميع الحقوق محفوظة.</p>
-                        <!-- Optional: Add Privacy Policy/Terms -->
+                        <p>© 2024 أحمد علي. جميع الحقوق محفوظة.</p>
                     </div>
-                    <!-- footer-copyright-area end -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- rts footer area end -->
 
 
-    <!-- Back to top button -->
     <div class="progress-wrap">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
         </svg>
     </div>
 
-     <!-- Mobile Menu Sidebar -->
     <div id="side-bar" class="side-bar header-two">
         <button class="close-icon-menu"><i class="far fa-times"></i></button>
         <div class="mobile-menu-main">
             <nav class="nav-main mainmenu-nav mt--30">
-                 <!-- *** UPDATE MOBILE MENU *** -->
                 <ul class="mainmenu metismenu" id="mobile-menu-active">
                      <li><a href="#home" class="main">الرئيسية</a></li>
                     <li><a href="#about" class="main">عني</a></li>
@@ -803,27 +732,22 @@
                     <li><a href="#contact" class="main">اتصل بنا</a></li>
                 </ul>
             </nav>
-             <!-- *** UPDATE SOCIAL LINKS IN MOBILE MENU *** -->
             <div class="rts-social-style-one pl--20 mt--100">
                  <ul>
-                     <li><a href="[رابط لينكد إن الخاص بك]" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                     <li><a href="[رابط صفحة فيسبوك الخاصة بك]" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                     <!-- Add other relevant links -->
+                     <li><a href="https://linkedin.com/in/example" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                     <li><a href="https://facebook.com/example" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                     <li><a href="https://wa.me/+201001234567" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                  </ul>
             </div>
         </div>
     </div>
-    <!-- Mobile Menu End -->
 
-    <!-- Scripts (Keep paths as they are) -->
     <script src="assets/js/vendor/jquery.min.js" defer></script>
     <script src="assets/js/vendor/metismenu.js" defer></script>
     <script src="assets/js/vendor/imagesloaded.pkgd.min.js" defer></script>
     <script src="assets/js/vendor/magnific-popup.js" defer></script>
-    <script src="assets/js/plugins/bootstrap.min.js" defer></script> <!-- May need Bootstrap RTL JS if using components -->
-    <!-- <script src="assets/js/plugins/swiper.js" defer></script> REMOVED Swiper JS as it's no longer needed -->
+    <script src="assets/js/plugins/bootstrap.min.js" defer></script>
     <script src="assets/js/main.js" defer></script>
-    <!-- Add custom JS if needed -->
 
 </body>
 </html>
